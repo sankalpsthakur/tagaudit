@@ -65,7 +65,8 @@ rejected nearly every capture there.
 
 ## Open questions
 
-1. **PyPI.** Until a release exists, install from GitHub (see the README).
+1. **Releases.** Publishing a GitHub release runs `.github/workflows/publish.yml`, which
+   tests the built wheel and uploads to PyPI through trusted publishing (no stored token).
 2. **Collector scope.** The OPC UA collector ships in v0.1 behind the `opcua` extra. If the
    pinned `asyncua` dependency becomes a maintenance burden, it can move to its own package.
 3. **Forge Space.** The Space's telemetry audit page should point here.

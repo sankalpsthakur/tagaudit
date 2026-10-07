@@ -1,5 +1,10 @@
 # tagaudit
 
+[![CI](https://github.com/sankalpsthakur/tagaudit/actions/workflows/ci.yml/badge.svg)](https://github.com/sankalpsthakur/tagaudit/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/tagaudit)](https://pypi.org/project/tagaudit/)
+[![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue)](https://pypi.org/project/tagaudit/)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue)](https://github.com/sankalpsthakur/tagaudit/blob/main/LICENSE)
+
 Check industrial tag data before you trust it.
 
 `tagaudit` reads a historian CSV export or an OPC UA capture and tells you which values to
@@ -17,7 +22,7 @@ It runs on your machine, needs only Python 3.10+, and never writes to a PLC or s
 ## Quick start
 
 ```bash
-pip install git+https://github.com/sankalpsthakur/tagaudit.git
+pip install tagaudit
 tagaudit check export.csv
 ```
 
@@ -29,8 +34,8 @@ tagaudit init export.csv -o profile.json      # lists tags and units; you add li
 tagaudit check export.csv --profile profile.json
 ```
 
-Output for [`examples/historian-long.csv`](examples/historian-long.csv) with
-[`examples/historian-profile.json`](examples/historian-profile.json):
+Output for [`examples/historian-long.csv`](https://github.com/sankalpsthakur/tagaudit/blob/main/examples/historian-long.csv) with
+[`examples/historian-profile.json`](https://github.com/sankalpsthakur/tagaudit/blob/main/examples/historian-profile.json):
 
 ```text
 tagaudit 0.1.0 · historian-long.csv · long export · asset pump-station-1
@@ -120,7 +125,7 @@ meaningless.
 ## OPC UA captures
 
 ```bash
-pip install "tagaudit[opcua] @ git+https://github.com/sankalpsthakur/tagaudit.git"
+pip install "tagaudit[opcua]"
 tagaudit collect --profile capture-profile.json --endpoint opc.tcp://192.168.0.10:4840 \
   --certificate client.pem --private-key client-key.pem --server-certificate server.der \
   --csv capture.csv --output capture.audit.json
@@ -130,7 +135,7 @@ The collector only reads: it exposes no Write or Call service, and it takes a bo
 of samples (`--samples`, default 5). It records each value's source, server and receive
 timestamps, so the audit can tell a fresh server timestamp on an old value from genuinely new
 data. Use a server-side read-only role as well, because client code is not access control.
-[`examples/capture-faults.csv`](examples/capture-faults.csv) shows the checks on a capture.
+[`examples/capture-faults.csv`](https://github.com/sankalpsthakur/tagaudit/blob/main/examples/capture-faults.csv) shows the checks on a capture.
 
 For machines without `pip`, copy `audit.py` out of the repository or the wheel. It runs on
 its own with the standard library and checks native captures:
