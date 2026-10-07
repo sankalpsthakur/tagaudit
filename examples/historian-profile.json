@@ -1,0 +1,20 @@
+{
+  "schema": "tagaudit.profile.v1",
+  "asset_id": "pump-station-1",
+  "quality_encoding": "opc_da_quality",
+  "max_gap_seconds": 5,
+  "max_repeats": 3,
+  "input": {
+    "format": "long",
+    "timestamp": "Timestamp",
+    "tag": "TagName",
+    "value": "Value",
+    "quality": "Quality",
+    "unit": "Units",
+    "timezone": "Europe/Berlin"
+  },
+  "tags": [
+    {"name": "PT-101", "description": "discharge pressure", "unit": "bar", "minimum": 0, "maximum": 16},
+    {"name": "FT-102", "description": "discharge flow", "unit": "m3/h", "minimum": 0, "maximum": 120}
+  ]
+}

@@ -1,0 +1,17 @@
+capture_id,asset_id,sequence,tag,value,unit,status_code,source_timestamp,server_timestamp,received_timestamp,unit_origin
+synthetic-handover,demo-pump,0,pressure,8,bar,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T07:59:59.900000+00:00,2026-10-01T08:00:00+00:00,server_property
+synthetic-handover,demo-pump,0,speed,60,%,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T07:59:59.900000+00:00,2026-10-01T08:00:00+00:00,server_property
+synthetic-handover,demo-pump,1,pressure,8,kPa,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:00.900000+00:00,2026-10-01T08:00:01+00:00,server_property
+synthetic-handover,demo-pump,1,speed,60,%,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:00.900000+00:00,2026-10-01T08:00:01+00:00,server_property
+synthetic-handover,demo-pump,2,pressure,8,bar,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T07:59:00+00:00,2026-10-01T08:00:02+00:00,server_property
+synthetic-handover,demo-pump,2,speed,60,%,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:01.900000+00:00,2026-10-01T08:00:02+00:00,server_property
+synthetic-handover,demo-pump,3,pressure,8,bar,0x00004000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:02.900000+00:00,2026-10-01T08:00:03+00:00,server_property
+synthetic-handover,demo-pump,3,speed,60,%,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:02.900000+00:00,2026-10-01T08:00:03+00:00,server_property
+synthetic-handover,demo-pump,4,pressure,8,bar,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:03.900000+00:00,2026-10-01T08:00:04+00:00,server_property
+synthetic-handover,demo-pump,5,pressure,8,bar,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:04.900000+00:00,2026-10-01T08:00:05+00:00,server_property
+synthetic-handover,demo-pump,5,speed,60,%,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:05.700000+00:00,2026-10-01T08:00:05.800000+00:00,server_property
+synthetic-handover,demo-pump,6,pressure,8,bar,0x40000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:05.900000+00:00,2026-10-01T08:00:06+00:00,server_property
+synthetic-handover,demo-pump,6,speed,60,%,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:05.900000+00:00,2026-10-01T08:00:06+00:00,server_property
+synthetic-handover,demo-pump,7,pressure,8,bar,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:06.900000+00:00,2026-10-01T08:00:07+00:00,server_property
+synthetic-handover,demo-pump,7,speed,60,%,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:06.900000+00:00,2026-10-01T08:00:07+00:00,server_property
+synthetic-handover,demo-pump,7,pressure,8,bar,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:06.900000+00:00,2026-10-01T08:00:07+00:00,server_property

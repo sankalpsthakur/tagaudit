@@ -1,0 +1,5 @@
+capture_id,asset_id,sequence,tag,value,unit,status_code,source_timestamp,server_timestamp,received_timestamp,unit_origin
+synthetic-handover,demo-pump,0,pressure,8,bar,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T07:59:59.900000+00:00,2026-10-01T08:00:00+00:00,server_property
+synthetic-handover,demo-pump,0,speed,60,%,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T07:59:59.900000+00:00,2026-10-01T08:00:00+00:00,server_property
+synthetic-handover,demo-pump,1,pressure,8,bar,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:00.900000+00:00,2026-10-01T08:00:01+00:00,server_property
+synthetic-handover,demo-pump,1,speed,60,%,0x00000000,2026-10-01T07:00:00+00:00,2026-10-01T08:00:00.900000+00:00,2026-10-01T08:00:01+00:00,server_property

@@ -1,0 +1,13 @@
+{
+  "schema": "tagaudit.profile.v1",
+  "asset_id": "demo-pump",
+  "freshness_basis": "server",
+  "quality_encoding": "opcua_status_code",
+  "max_age_seconds": 2,
+  "max_future_seconds": 0.25,
+  "max_snapshot_skew_seconds": 0.5,
+  "tags": [
+    {"name": "pressure", "unit": "bar", "minimum": 0, "maximum": 16, "source_node": "ns=2;s=DemoPressure"},
+    {"name": "speed", "unit": "%", "minimum": 0, "maximum": 100, "source_node": "ns=2;s=DemoSpeed"}
+  ]
+}
