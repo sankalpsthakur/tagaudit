@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.1 (unreleased)
+## 0.1.1 (2026-10-09)
 
 - Publish workflow: the upload accepts an API-token secret as a fallback to trusted publishing. No code changes.
 
