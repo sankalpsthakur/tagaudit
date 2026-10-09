@@ -1,7 +1,8 @@
 name: publish
 
 # Publishing a GitHub release builds, tests and uploads that exact commit to PyPI.
-# PyPI trusts this workflow directly (trusted publishing), so no API token is stored.
+# PyPI trusts this workflow directly (trusted publishing). If the PYPI_API_TOKEN secret exists, the
+# upload uses it instead.
 on:
   release:
     types: [published]
@@ -43,3 +44,6 @@ jobs:
           name: dist
           path: dist/
       - uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          # Empty when the PYPI_API_TOKEN secret is not set, which keeps trusted publishing.
+          password: ${{ secrets.PYPI_API_TOKEN }}

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 (unreleased)
+
+- Publish workflow: the upload accepts an API-token secret as a fallback to trusted publishing. No code changes.
+
 ## 0.1.0 (2026-10-07)
 
 First release as a standalone package, extracted from the Forge Industrial Agent Lab
